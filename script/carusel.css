@@ -1,0 +1,11 @@
+.bx-pager{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.bx-wrapper{
+    border: none;
+    box-shadow: none;
+}
