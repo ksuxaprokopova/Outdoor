@@ -4,6 +4,7 @@ $(".carusel").bxSlider({
     infiniteLoop: true,
     touchEnabled: true,
     hideControlOnEnd: false,
+    sliderHeight: 450, 
 });
 
 $(".carusel_button").click(e => {
