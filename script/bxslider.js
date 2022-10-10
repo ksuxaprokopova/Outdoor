@@ -1,6 +1,12 @@
-// $(".carusel").bxSlider({
-//     mode: "fade",
-//     controls: true,
-//     randomStart: true,
-//     pager: false,
-// })
+$(".carusel").bxSlider({
+    controls: false,
+    pager: false,
+    infiniteLoop: true,
+    touchEnabled: true,
+    hideControlOnEnd: false,
+});
+
+$(".carusel_button").click(e) => {
+    e.preventDefault();
+    slider.goToNextSlider()
+}
