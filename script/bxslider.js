@@ -6,7 +6,7 @@ $(".carusel").bxSlider({
     hideControlOnEnd: false,
 });
 
-$(".carusel_button").click(e) => {
+$(".carusel_button").click(e => {
     e.preventDefault();
     slider.goToNextSlider()
-}
+})
