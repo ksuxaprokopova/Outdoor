@@ -9,5 +9,6 @@ $(".carusel").bxSlider({
 
 $(".carusel_button").click(e => {
     e.preventDefault();
-    slider.goToNextSlider()
+    console.log(slider)
+    slider.goToNextSlide()
 })
