@@ -27,32 +27,34 @@
             </div>
             <div class="header_menu flex">
             <nav class="header_nav">
-                <ul class="header_ul flex">
+                <ul class="header_ul flex flex_menu">
                 <li class="header_li">
-                    <a href="#" class="header_link">Shop</a>
+                    <a href="#" id="shop_link" class="header_link">Shop</a>
                 </li>
                 <li class="header_li">
-                    <a href="#" class="header_link">About us</a>
+                    <a href="#" id="navi_link" class="header_link">About us</a>
                 </li>
                 <li class="header_li">
-                    <a href="#" class="header_link">Our team</a>
+                    <a href="#" id="foot_link" class="header_link">Our team</a>
                 </li>
                 <li class="header_li">
-                    <a href="#" class="header_link">Buyer's guides</a>
+                    <a href="#" id="buy_link" class="header_link">Buyer's guides</a>
                 </li>
                 <li class="header_li">
-                    <a href="#" class="header_link">Categories</a>
+                    <a href="#" id="cat_link" class="header_link">Categories</a>
                 </li>
                 </ul>
             </nav>
-            <div>
-                <button class="button-grey">Buy template</button>
-            </div>
-            <div class="button-grey_basket">
-                <button class="button-grey button_basket">Cart</button>
-                <img src="./img/header/basket.png" alt="basket" class="header_basket">
-                <div class="header_img"></div>
-                <div class="header_number">0</div>
+            <div class="header_buttons flex">
+                 <div>
+                     <button id="open_modal" class="button-grey">Buy template</button>
+                 </div>
+                <div class="button-grey_basket">
+                    <button class="button-grey button_basket">Cart</button>
+                    <img src="./img/header/basket.png" alt="basket" class="header_basket">
+                    <div class="header_img"></div>
+                    <div class="header_number">0</div>
+                </div>
             </div>
             </div>
         </div>
@@ -64,8 +66,7 @@
             <p class="v_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
         </div>
     </section>
-    <section class="about">
-            <div class="container flex">
+    <section class="about container flex" >
             <img class="about_img" src="./img/about/IMAGE.png" alt="pictures">
             <img src="./img/about/fon.png" alt="fon" class="about_fon_top">
             <img src="./img/about/fon.png" alt="fon" class="about_fon_bottom">
@@ -79,9 +80,8 @@
                     <button class="buttons">Read more</button>
                 </div>
             </div>
-        </div>
     </section>
-    <section class="setting">
+    <section id="cat" class="setting">
         <div class="container">
             <div class="setting_top">
                 <h3 class="v_pre_title">Our promise</h3>
@@ -124,7 +124,7 @@
         <img src="./img/setting/fon_top.png" alt="fon" class="setting_fon_top">
         <img src="./img/setting/fon_bottom.png" alt="fon" class="setting_fon_bottom">
     </section>
-    <section class="categories container">
+    <section id="shop" class="categories container">
         <div class="categories_content">
             <h3 class="v_pre_title">Meet the family</h3>
             <h2 class="v_title">What we have in store for you.</h2>
@@ -219,7 +219,7 @@
                     <button class="products_button">Visit shop</button>
                 </div>
     </section>
-    <section class="navigating container">
+    <section id="navi" class="navigating container">
         <div class="navigating_content">
             <h3 class="v_pre_title navigating_pre_title">Buyer's guides</h3>
             <h2 class="v_title">Navigating our offering.</h2>
@@ -255,7 +255,7 @@
             <button class="buttons carusel_button">Show all buyer's guides</button>
         </div>
     </section>
-    <section class="subscribe about">
+    <section id="buy" class="subscribe about">
         <div class="container flex">
         <img class="about_img" src="./img/subscribe/1.png" alt="pictures">
         <img src="./img/about/fon.png" alt="fon" class="about_fon_top">
@@ -272,7 +272,7 @@
         </div>
     </div>
     </section>
-    <footer class="footer">
+    <footer id="foot" class="footer">
         <div class="container">
             <div class="footer_logo">
                  <img  src="./img/footer/logo.png" alt="logo">
@@ -282,7 +282,7 @@
                    <div class="footer_list">
                        <ul class="footer_ul">
                            <li class="footer_list_title">
-                               <a class="footer_list_title_a" href="">Pages</a>
+                               <a class="footer_list_title_a footer_two" href="">Pages</a>
                            </li>
                            <li class="footer_list_paragraph">
                             <a class="footer_list_paragraph_a" href="#">Home</a>
@@ -332,7 +332,7 @@
                    <div class="footer_list">
                        <ul class="footer_ul">
                            <li class="footer_list_title">
-                               <a class="footer_list_title_a" href="">Company</a>
+                               <a class="footer_list_title_a footer_two" href="">Company</a>
                            </li>
                            <li class="footer_list_paragraph">
                             <a class="footer_list_paragraph_a" href="#">About us</a>
@@ -358,7 +358,7 @@
                 <div class="footer_content_right">
                     <div class="footer_contecst">
                         <div class="footer_list_title">
-                            <a class="footer_list_title_a" href="#">Newsletter</a>
+                            <a class=" footer_two footer_list_title_a " href="#">Newsletter</a>
                         </div>
                         <p class="footer_list_text">Subscribe to our (infrequent) newsletter where we share news about upcoming listings and projects.</p>
                     </div>
@@ -373,7 +373,7 @@
                 </div>
             </div>
             <div class="footer_bottom flex">
-                <div class="footer_bottom_left fkex">
+                <div class="footer_bottom_left ">
                     <a href="#" class="footer_link">© Outdoor Exploration, LLC. All rights reserved. Powered by</a>
                     <a href="#" class="footer_link">Webflow</a>
                 </div>
@@ -396,6 +396,22 @@
     </footer>
     <div id="up">
         <span>></span>
+    </div>
+    <div class="modal_overlay">
+        <div class="modal">
+            <div class="modal_name">
+                <label class="modal_label">
+                    <input  class="modal_text" type="name" placeholder="Name" required>
+                </label>
+            </div>
+            <div class="modal_name">
+                 <label class="modal_label">
+                    <input class="modal_text"  type="email" placeholder="E-mail" required>
+                </label>
+            </div>
+             <button class="button-grey" >Lets Go</button>
+            <p class="close">x</p>
+        </div>
     </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
