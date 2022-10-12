@@ -309,6 +309,10 @@ body{
     position: relative;
 }
 
+.categories_items:hover{
+    transform: scale(1.05);
+}
+
 .categories_img_top{
     position: absolute;
     left: 39px;
