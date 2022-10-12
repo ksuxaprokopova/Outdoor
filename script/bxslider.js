@@ -1,10 +1,10 @@
-$(".carusel").bxSlider({
+let slider = $(".carusel").bxSlider({
     controls: false,
     pager: false,
     infiniteLoop: true,
     touchEnabled: true,
     hideControlOnEnd: false,
-    sliderHeight: 450, 
+    sliderHeight: 500, 
 });
 
 $(".carusel_button").click(e => {

@@ -1,3 +1,5 @@
+  
+   
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -17,6 +19,20 @@ body{
 
 .header{
     padding: 20px 0;
+}
+
+.check{
+    width: 20px;
+    height: 3px;
+    background: #2C3241;
+}
+
+.check:not(:last-of-type){
+    margin-bottom: 4px;
+}
+
+.header_menu_checkbox, .header_menu_check{
+    display: none;
 }
 
 .header_nav{
@@ -72,6 +88,7 @@ body{
 
 .button-grey_basket{
     position: relative;
+    margin-left: 20px;
 }
 
 .button_basket{
@@ -359,6 +376,10 @@ body{
 .products_bottom{
     padding: 100px 0;
     background-color: #415948;
+    background-image: url(../img/products/fon_bottom.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: 5;
 }
 
@@ -425,13 +446,6 @@ body{
     cursor: pointer;
 }
 
-.products_bottom_fon img{
-    position: absolute;
-    bottom: 5px;
-    top: 5px;
-    z-index: 6;
-}
-
 .subscribe_title{
     max-width: 295px;
 }
@@ -450,6 +464,11 @@ body{
     margin: 0 auto;
  
 }
+
+.carusel_items > *{
+    margin: 0 auto;
+}
+
 
 .navigating_pre_title{
     margin-bottom: 0;
@@ -542,11 +561,20 @@ body{
     color: #E6B939;
 }
 
+.footer_list_title_a:hover{
+    color: #eab010;
+    transform: scale(1.1);
+}
+
 .footer_list_paragraph_a{
     text-decoration: none;
     font-family: 'Poppins';
     font-size: 14px;
     line-height: 20px;
+    color: #dedada;
+}
+
+.footer_list_paragraph_a:hover{
     color: #FFFFFF;
 }
 
@@ -559,18 +587,26 @@ body{
     font-family: 'Poppins';
     font-size: 14px;
     line-height: 20px;
-    color: #FAFAFC;
+    color: #dedada;
     margin-bottom: 9px;
+}
+
+.footer_list_text:hover{
+    color: #FFFFFF;
 }
 
 .footer_input{
     width: 458px;
     height: 53px;
-    background: #F9FAFB;
-    border: 1px solid #E5E7EB;
+    background: #FFFFFF;
+    border: 1px solid #dedada;
     border-radius: 8px;
     padding-left: 21px;
     cursor: pointer;
+}
+
+.footer_input:hover{
+    color: #FFFFFF;
 }
 
 .footer_input::placeholder{
@@ -602,6 +638,10 @@ body{
     font-family: 'Poppins';
     font-size: 14px;
     line-height: 20px;
+    color: #dedada;
+}
+
+.footer_link:hover{
     color: #FFFFFF;
 }
 
@@ -612,5 +652,156 @@ body{
 .footer_icon:not(:last-child){
     margin-right: 20px;
 }
+
+
+
+
+@media screen and (max-width:1200px){
+    .container{
+        max-width: 1050px;
+    }
+
+    .header_nav{
+        margin-left: 0;
+    }
+}
+
+
+
+
+@media screen and (max-width:1090px){
+    .container{
+        max-width: 750px;
+    }
+
+    .header_menu{
+        display: none;
+    }
+
+    
+    .header_menu_checkbox, .header_menu_check{
+        display: block;
+    } 
+
+    .header_menu{
+        position: relative;
+        background-color: rgb(230, 168, 156);
+    }
+
+    .header_menu_check{
+        top: 35px;
+        right: 65px;
+        position: absolute;
+        z-index: 4;
+    }
+
+    .check{
+      
+        transition: 300ms;
+    }
+
+    .header_menu_checkbox{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        margin: 0;
+        top: 56px;
+        right: 48px;
+        opacity: 0;
+        z-index: 5;
+    }
+
+    .header_menu_checkbox:checked ~ .header_menu_check > .check:first-of-type{
+       
+        transform: rotate(45deg) translate(0px);
+        position: fixed;
+    }
+
+    .header_menu_checkbox:checked ~ .header_menu_check > .check:nth-of-type(2){
+        opacity: 0;
+        position: fixed;
+    }
+
+    .header_menu_checkbox:checked ~ .header_menu_check > .check:last-of-type{
+        
+        transform: rotate(-45deg) translate(0px);
+        position: fixed;
+    }
+
+    .header_menu_checkbox:checked  ~ .header_nav{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 30%;
+        bottom: 0;
+        right: 0;
+        border-radius: 20px;
+        text-align: center;
+        background: #000000;
+    }
+
+    .header_ul{
+        flex-direction: column;
+        padding-top: 40px;
+        margin-right: 0;
+    }
+
+    .header_li:first-of-type{
+        margin-right: 0;
+    }
+
+    .header_li{
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:800px){
+    .container{
+        max-width: 500px;
+    }
+}
+
+
+
+
+@media screen and (max-width:550px){
+   .container{
+    max-width: 430px;
+   }
+    
+}
+
+
+
+
+@media screen and (max-width:480px){
+    .container{
+        max-width: 310px;
+    }
+}
+
+
+
+
+@media screen and (max-width:360px){
+    .container{
+        max-width: 290px;
+    }
+}
+
+
+
+
+@media screen and (max-width:320px){
+    .container{
+        max-width: 290px;
+    }
+}
+
+
 
 
