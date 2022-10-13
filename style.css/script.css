@@ -258,6 +258,7 @@ body{
 
 .items_setting_title{
     font-family: 'Roboto';
+    text-align: center;
     font-size: 20px;
     line-height: 24px;
     color: #575445;
@@ -312,6 +313,7 @@ body{
 
 .categories_items{
     position: relative;
+    padding: 0 10px;
 }
 
 .categories_items:hover{
@@ -320,12 +322,13 @@ body{
 
 .categories_img_top{
     position: absolute;
-    left: 39px;
+    left: 60px;
     top: 35px;
 }
 
 .categories_title{
     font-family: 'Roboto';
+    text-align: center;
     font-size: 28px;
     line-height: 34px;
     color: #575445;
@@ -334,6 +337,7 @@ body{
 
 .categories_text{
     max-width: 291px;
+    text-align: center;
     font-family: 'Poppins';
     font-size: 16px;
     line-height: 22px;
@@ -610,6 +614,7 @@ body{
     border-radius: 8px;
     padding-left: 21px;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .footer_input::placeholder{
@@ -628,8 +633,8 @@ body{
     height: 39px;
     box-sizing: border-box;
     position: absolute;
-    right: 20px;
-    bottom: 11px;
+    right: 21px;
+    bottom: 9px;
 }
 
 .footer_bottom{
@@ -672,6 +677,10 @@ body{
         max-width: 350px;
     }
 
+    .categories_img_top{
+        left: 35px;
+    }
+
    
     #up{
         right: 100px;
@@ -684,6 +693,14 @@ body{
 @media screen and (max-width:1090px){
     .container{
         max-width: 750px;
+    }
+
+    .button-grey, .buttons, .about_fon_bottom, .about_fon_top{
+        max-width: 100%;
+    }
+
+    .button-grey{
+        font-size: 12px;
     }
 
     .header_menu{
@@ -737,7 +754,7 @@ body{
         padding: 30px 0;
         background-color: rgba(230, 185, 57, 1);
         top: 0;
-        left: 50%;
+        left: 30%;
         bottom: 50%;
         right: 0;
         text-align: center;
@@ -765,6 +782,10 @@ body{
         margin-bottom: 20px;
     }
 
+    .header_li:not(:last-of-type){
+        margin-right: 0;
+    }
+
     .header_buttons{
         justify-content: center;
     }
@@ -787,14 +808,33 @@ body{
 
 
 
-    .about .flex{
+    .about{
+        display: flex;
        flex-direction: column;
+       padding-bottom: 50px;
     }
 
 
+    .about_img{
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about_fon_bottom {
+        bottom: 250px;
+        left: -30px;
+    }
+
+    .categories{
+        margin: 50px auto;
+    }
 
     .categories_items{
         max-width: 100%;
+    }
+
+    .categories_img_top{
+        left: 35px;
     }
 
     .categories_list{
@@ -802,6 +842,14 @@ body{
     grid-template-rows: repeat(3, 1fr);
     gap: 16px;
     } 
+
+    .setting{
+        padding: 50px 0;
+    }
+
+    .setting_fon_bottom, .setting_fon_top{
+        max-width: 100%;
+    }
 
 
 
@@ -835,6 +883,10 @@ body{
         flex-direction: column;
     }
 
+    .footer_content_left{
+        max-width: 100%;
+    }
+
     .footer_input{
         max-width: 460px;
        
@@ -853,7 +905,14 @@ body{
     }
 
     .footer_bottom_left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         margin-bottom: 10px;
+    }
+
+    .footer_button{
+        right: 5px;
     }
 
 
@@ -874,15 +933,132 @@ body{
     .container{
         max-width: 500px;
     }
+
+    .exploration{
+        padding: 100px 0;
+    }
+
+    .about{
+        padding: 20px 0 50px;
+    }
+
+    
+
+    .about_fon_bottom{
+        bottom: 40px;
+        left: 20px;
+    }
+  
+    
+    .about_fon_top{
+        left: 150px;
+        top: 20px;
+    }
+
+   
+
+    .navigating{
+        padding: 50px 0;
+    }
+
+    .persons{
+        margin-left: -220px;
+    }
+
+    .grid_setting{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 110px 100px;
+    }
+
+    .products_top_content{
+        max-width: 100%;
+        padding: 20px 10px 10px;
+        height: 120px;
+        width: 255px;
+    }
+
+    .products_list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products_li{
+        margin-bottom: 10px;
+    }
+
+    .categories{
+        margin: 50px auto;
+    }
+
+    .categories_list{
+        grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+             gap: 16px;
+        } 
+
+    .categories_items img{
+        max-width: 100%;
+    }
+
+  
+
+    .categories_img_top{
+        left: 120px;
+    }
+
+    .footer_list{
+        margin-right: 45px;
+    }
+
+    .footer_input{
+        width: 100%;
+    }
+
+
 }
 
 
 
 
 @media screen and (max-width:550px){
-   .container{
-    max-width: 430px;
-   }
+    .container{
+        max-width: 430px;
+    }
+
+    .header_menu_checkbox:checked, .header_menu_checkbox:checked ~ .header_menu_check{
+        position: fixed;
+        top: 30px;
+        right: 30px;
+    }
+
+    .persons{
+        margin-left: -145px;
+    }
+
+    .grid_setting{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 50px;
+    }
+
+    .categories_img_top {
+        left: 80px;
+    }
+
+    .about_fon_top{
+        left: 28px;
+    }
+
+    .footer_content_left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_list_paragraph:not(:last-child) {
+        margin-bottom: 0px;
+    }
+
     
 }
 
@@ -893,8 +1069,28 @@ body{
     .container{
         max-width: 310px;
     }
-}
 
+    .header_buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button-grey_basket{
+        margin-left: 0;
+    }
+
+    .persons{
+        margin-left: -55px;
+    }
+
+    .categories_img_top {
+        left: 48px
+    }  
+    
+    .categories_text {
+        max-width: 215px;
+    }
+ }
 
 
 

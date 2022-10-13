@@ -12,3 +12,4 @@ $(".carusel_button").click(e => {
     console.log(slider)
     slider.goToNextSlide()
 })
+
