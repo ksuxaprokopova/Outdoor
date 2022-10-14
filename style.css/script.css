@@ -605,12 +605,16 @@ body{
 .footer_input{
     width: 458px;
     height: 53px;
-    background: #FFFFFF;
+    background: #ece6e6;
     border: 1px solid #dedada;
     border-radius: 8px;
     padding-left: 21px;
     cursor: pointer;
     box-sizing: border-box;
+}
+
+.footer_input:focus{
+    background: #FFFFFF;
 }
 
 .footer_input::placeholder{
@@ -653,6 +657,10 @@ body{
     margin-right: 20px;
 }
 
+.footer_icon{
+    text-decoration: none;
+}
+
 .footer_icon:not(:last-child){
     margin-right: 20px;
 }
@@ -670,7 +678,7 @@ body{
     }
 
     .categories_items img{
-        max-width: 350px;
+        max-width: 100%;
     }
 
     .categories_img_top{
@@ -750,7 +758,7 @@ body{
         background-color: rgba(230, 185, 57, 1);
         top: 0;
         left: 30%;
-        bottom: 40%;
+        bottom: 30%;
         right: 0;
         text-align: center;
         z-index: 4;
@@ -925,7 +933,7 @@ body{
     }
 
     .about{
-        padding: 20px 0 50px;
+        padding: 50px 0;
     }
 
     .about_fon_bottom{
@@ -938,8 +946,12 @@ body{
         top: 20px;
     }
 
+    .about_content{
+        padding-left: 0;
+    }
+
     .navigating{
-        padding: 50px 0;
+        padding: 50px 0 20px;
     }
 
     .persons{

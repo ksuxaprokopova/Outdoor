@@ -49,3 +49,4 @@ $(".close").on("click", function(){
 $("#open_modal").on("click", function(){
     $(".modal_overlay").fadeIn()
 })
+
