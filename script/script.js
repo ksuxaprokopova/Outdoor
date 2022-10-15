@@ -20,9 +20,14 @@ $("#button").on("click", function(e){
         cache: false,
         data: {"email": email, "name": name},
         dataType: "html",
+        beforeSend: function(){
+            $("#button").prop("disabled", true)
+        },
         success: function(){
+            $(".modal_overlay_fanks").fadeIn();
             $("#name").val("");
-            $("#email").val("")
+            $("#email").val("");
+            $("#button").prop("disabled", false)
         }
     })
 })
