@@ -79,3 +79,47 @@
     right: 60px;
     cursor: pointer;
 }
+
+
+.modal_overlay_fanks{
+    display: none;
+    position: fixed;
+    background-color: rgba( 0, 0, 0, .3);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 6;
+}
+
+.modal_fanks{
+    max-width: 600px;
+    text-align: center;
+    background-color: rgba(230, 185, 57, 1);
+    padding:  50px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal_fanks p:first-child{
+    margin-bottom: 20px;
+}
+
+.modal_fanks_text{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 20px;
+    color: #575445;
+}
+
+.close_fanks{
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    cursor: pointer;
+}

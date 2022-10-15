@@ -396,20 +396,31 @@
     <div id="up">
         <span>></span>
     </div>
-    <div class="modal_overlay">
-        <div class="modal">
-            <div class="modal_name">
-                <label class="modal_label">
-                    <input  class="modal_text" type="name" placeholder="Name" required>
-                </label>
+    <form method="POST">
+        <div class="modal_overlay">
+            <div class="modal">
+                <div class="modal_name">
+                    <label class="modal_label">
+                        <input id="name" class="modal_text" type="text" placeholder="Name" required>
+                        <p id="error_name" class="error_message"></p>
+                    </label>
+                </div>
+                <div class="modal_name">
+                     <label class="modal_label">
+                        <input id="email" class="modal_text"  type="email" placeholder="E-mail" required>
+                       <p id="error_email" class="error_message"></p>
+                    </label>
+                </div>
+                 <button id="button" type="submit" class="button-grey" >Lets Go</button>
+                <p class="close">x</p>
             </div>
-            <div class="modal_name">
-                 <label class="modal_label">
-                    <input class="modal_text"  type="email" placeholder="E-mail" required>
-                </label>
-            </div>
-             <button class="button-grey" >Lets Go</button>
-            <p class="close">x</p>
+        </div>
+    </form>
+    <div class="modal_overlay_fanks">
+        <div class="modal_fanks">
+            <p class="modal_fanks_text">Thanks.</p>
+            <p class="modal_fanks_text">Operator will contact you shortly</p>
+            <p class="close_fanks">x</p>
         </div>
     </div>
     </div>
@@ -423,4 +434,4 @@
         new WOW().init();
         </script>
 </body>
-</html> -->
+</html> 
