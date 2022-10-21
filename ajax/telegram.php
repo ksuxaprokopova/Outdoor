@@ -1,6 +1,6 @@
 <?php
 $name = $_POST['name'];
-$email = $_POST{"email"};
+$email = $_POST['email'];
 $token = "5666538070:AAGIzi-6BHP0F-wQi9vAp0hGFsmLqHP0LSE";
 $chat_id = "-843808906";
 $arr = array(
@@ -9,12 +9,12 @@ $arr = array(
 );
 
 foreach($arr as $key => $value) {
-  $txt .= "<b>".$key."</b> ".$value."";
+  $txt.= "<b>".$key."</b> ".$value."";
 };
 
 $website="https://api.telegram.org/bot".$token;
   $params=[
-      'chat_id'=>$chat_id, 
+      'chat_id'=> $chat_id, 
       'text'=> $txt,
   ];
   $ch = curl_init($website . '/sendMessage');
