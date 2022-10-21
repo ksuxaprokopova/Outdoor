@@ -9,7 +9,7 @@ $arr = array(
 );
 
 foreach($arr as $key => $value) {
-  $txt.= "<b>".$key."</b> ".$value."";
+  $txt .= "<b>".$key."</b> ".$value."";
 };
 
 $website="https://api.telegram.org/bot".$token;
