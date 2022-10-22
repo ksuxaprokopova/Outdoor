@@ -15,7 +15,7 @@ $("#button").on("click", function(e){
     }
 
     $.ajax({
-        url: "ajax/telegram.php",
+        url: "../ajax/telegram.php",
         type: "POST",
         cache: false,
         data: {"email": email, "name": name},
